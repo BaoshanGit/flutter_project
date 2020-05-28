@@ -69,7 +69,7 @@ class _LeadPage extends State<LeadPage> {
     );
   }
 
-  _page(_index) {
+  void _page(_index) {
     Navigator.of(context).push(MaterialPageRoute(
         builder: (BuildContext context) => listPages[_index]));
   }
