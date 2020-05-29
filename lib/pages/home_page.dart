@@ -9,16 +9,19 @@ class Home extends StatelessWidget {
         title: Text('Home',style: TextStyle(color: Colors.white)),
       ),
       body: Center(
-        child: Row(
+        child: Column(
           children: <Widget>[
             TextField(
-//              controller: ,
+              keyboardType: TextInputType.numberWithOptions(),
+              decoration: InputDecoration(
+                contentPadding: EdgeInsets.all(2.0)
+              ),
             ),
             RaisedButton(
                 color: Colors.deepPurpleAccent,
                 child: Text("确认选择"),
                 onPressed: () {
-                  getHttp();
+//                  getHttp();
                 }
             )
           ],
@@ -27,13 +30,13 @@ class Home extends StatelessWidget {
     );
   }
 
-  Future getHttp() async {
-    try {
-      Response response = await Dio().get("");
-      print(response.toString());
-      return response;
-    } catch (e) {
-      print(e);
-    }
-  }
+//  Future getHttp() async {
+//    try {
+//      Response response = await Dio().get("");
+//      print(response.toString());
+//      return response.data;
+//    } catch (e) {
+//      print(e);
+//    }
+//  }
 }

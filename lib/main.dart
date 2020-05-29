@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'project_lead_page.dart';
+import 'parent_page.dart';
 
 void main(){
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
-      home: LeadPage(),
+      home: ParentPage(),
     );
   }
 

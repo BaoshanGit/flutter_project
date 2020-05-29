@@ -10,8 +10,9 @@ class LeadPage extends StatefulWidget {
 }
 
 class _LeadPage extends State<LeadPage> {
+
   int _index = 0;
-  var iconColor = Colors.lightBlue;
+   static final iconColor = Colors.lightBlue;
 
   //list集合添加图标
   var listIcons = [Icons.home, Icons.shop,
@@ -25,8 +26,11 @@ class _LeadPage extends State<LeadPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
-          color: Colors.lightBlue,
+          color: Colors.grey,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               IconButton(
                   icon: Icon(listIcons[0]),
