@@ -36,8 +36,8 @@ class _RequestPage extends State<RequestPage>{
     Response response;
     try{
       Dio dio = new Dio();
-      var str = dio.options.headers.addAll(headers);
-//      response = await dio.get(url , str);
+      dio.options.headers = headers;
+      response = await dio.get(url);
       return response.data;
     }catch(e){
       print(e);
