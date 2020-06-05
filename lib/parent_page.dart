@@ -11,7 +11,7 @@ class ParentPage extends StatefulWidget {
 class _ParentPage extends State<ParentPage>{
 
   int _index = 0;
-  List<Widget> pageList = [Home(), ShopPage(),
+  List<Widget> pageList = [HomePage(), ShopPage(),
     ShopCartPage(), PersonPage()];
 
 

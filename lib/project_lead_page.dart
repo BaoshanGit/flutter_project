@@ -19,7 +19,7 @@ class _LeadPage extends State<LeadPage> {
     Icons.shopping_cart, Icons.person];
 
   //list集合添加页面
-  var listPages = [Home(), ShopPage(),
+  var listPages = [HomePage(), ShopPage(),
     ShopCartPage(), PersonPage()];
 
   @override
